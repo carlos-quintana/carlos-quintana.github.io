@@ -30,11 +30,11 @@ header {
     border-radius: 5%;
 }
 
-nav ul {
+nav ul, .row-contact ul {
     list-style: none;
 }
 
-nav ul li {
+nav ul li, .row-contact ul li {
     display: inline-flex;
 }
 
@@ -98,6 +98,11 @@ section, footer {
 
 #about .button {
     font-size: 1rem;
+    transition: all 0.3s ease 0s;
+}
+
+#about .button:hover {
+    background-color:  var(--primary-lighter);
 }
 
 @media (min-width: 1000px) {
@@ -144,7 +149,7 @@ section, footer {
     margin: 0 0 3rem 0;
 }
 
-.row-skills {
+.row-skills, .row-contact{
     /* border: green solid 10px; */
     width: 60%;
     display: flex;
@@ -194,6 +199,35 @@ section, footer {
     border-radius: 15%;
 }
 
+.row-contact ul  {
+    width: 80%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.row-contact ul li  {
+    background-color: white;
+    padding: 1.3rem;
+    border-radius: 50%;
+    line-height: 2rem;
+    margin: 5px;
+
+    transition: all 0.3s ease 0s;
+}
+.row-contact ul li:hover  {
+    background-color: #f0aebf;
+    cursor: pointer;
+}
+
+.row-contact ul li a {
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: var(--primary-darker);
+    text-decoration: none; 
+}
+
 footer {
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
