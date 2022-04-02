@@ -1,12 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 700;
-    src: url(https://fonts.gstatic.com/s/sourcesanspro/v19/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
   
 :root {
     --primary: #d6325b;
@@ -14,15 +6,15 @@
     --primary-darker: #bd2249;
 }
 
-
 body {
     font-family: "Roboto", sans-serif;
-    margin:0;
+    margin: 0;
     color: #292929;
 }
 
-h2 {
-    margin:0;
+h1, h2 {
+    margin: 0;
+    text-align: center;
 }
 
 section, footer {
@@ -54,11 +46,14 @@ section, footer {
     background-repeat: no-repeat;
 }
 
-
 #about h1 {
     font-weight: 500;
     font-size: 4rem;
     margin: 0;
+}
+
+#about .button {
+    font-size: 1rem;
 }
 
 @media (min-width: 1000px) {
@@ -68,6 +63,9 @@ section, footer {
     #about h1 {
         font-weight: 500;
         font-size: 5.5rem;
+    }
+    #about .button {
+        font-size: 1.3rem;
     }
 }
 
@@ -85,18 +83,71 @@ section, footer {
 }
 
 .section {
-    padding: 8rem 0;
+    padding: 8rem 0 2rem 0;
 }
-
 
 .section h2 {
     font-size: 3rem;
     margin: 0 0 3rem 0;
 }
-
 #skills, #contact {
     background-color: var(--primary);
     color: white;
+}
+
+#skills h3 {
+    font-size: 2rem;
+    margin: 0 0 3rem 0;
+}
+
+.row-skills {
+    /* border: green solid 10px; */
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill {
+    /* border: blue solid 4px;
+    background-color: violet; */
+    width: 100%;
+    max-width: 100%;
+
+    padding: 0 20px;
+    margin: 0 0 3.5rem 0;
+
+    flex-basis: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-icon img {
+    width: 7rem;
+    margin: 0 0 1rem 0;
+    /* The following lines overrides the original color of the svg to white */
+    filter: invert(96%) sepia(7%) saturate(450%) hue-rotate(211deg) brightness(126%) contrast(100%);
+}
+
+@media (max-width:786px) {
+    .skill-icon img {
+        width: 5rem;
+    }
+    .row-skills {
+        width: 90%;
+    }
+}
+
+.skill span {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+#javascript-icon, #typescript-icon {
+    border-radius: 15%;
 }
 
 footer {
