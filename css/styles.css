@@ -228,6 +228,44 @@ section, footer {
     background-color: #555555;
 }
 
+.technologies-pills {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+    .technologies-pills {
+        justify-content: space-around;
+    }
+}
+
+.pill {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    margin: 0.25rem;
+
+    border-radius: 1rem;
+    border: none;
+}
+
+.pill-html5{
+    background-color: rgb(255, 108, 41);
+}
+
+.pill-css3 {
+    background-color: #18b9ff;
+}
+
+.pill-js {
+    background-color: #ebd300;
+    color:#292929
+}
+.pill-sass {
+    background-color: #fd50a6;
+}
 #skills, #contact {
     background-color: var(--primary);
     color: white;
