@@ -19,7 +19,10 @@
     <!-- Navigation -->
     <header>
         <nav>
-            <ul>
+            <button id="hamburger-button">
+                <i class="icon-menu"></i>
+            </button>
+            <ul id="navList" class="">
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -172,6 +175,15 @@
     <footer>
 
     </footer>
+
+    <script>
+        const hamburgerButton = document.querySelector("#hamburger-button");
+        const navBar = document.querySelector("#navList");
+        hamburgerButton.addEventListener("click", () => {
+            console.log("Burger time");
+            navBar.classList.toggle("show");
+        })
+    </script>
 </body>
 
 </html>

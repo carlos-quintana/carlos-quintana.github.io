@@ -31,7 +31,18 @@ header {
     left: 0px;
     z-index: 1;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 0 0px 20px 20px;
+}
+
+nav {
+    width: 100%;
+
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul, .row-contact ul {
@@ -58,6 +69,41 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: var(--primary-lighter);
+}
+
+#hamburger-button {
+    display: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border: 0;
+    padding: 8px;
+    margin: 4px;
+    margin-left: 35px;
+}
+
+#hamburger-button:active {
+    user-select: none;
+    color: var(--primary-lighter);
+}
+
+@media (max-width: 500px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    nav ul {
+        display: none;
+    }
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #hamburger-button {
+        display: block;
+    }
 }
 
 h1, h2 {
@@ -276,6 +322,7 @@ section, footer {
 .pill-sass {
     background-color: #fd50a6;
 }
+
 #skills, #contact {
     background-color: var(--primary);
     color: white;
