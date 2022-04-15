@@ -1,0 +1,29 @@
+@use "sass:color";
+
+$primary: #d6325b;
+$primary-lighter: #ec577c;
+$primary-darker: #bd2249;
+$dark: #282828;
+
+// Technologies
+$html5: #ff6c29;
+$css3: #18b9ff;
+$sass: #fd50a6;
+$javascript: #ebd300;
+$typescript: #2f74c0;
+$sql: #0073cb;
+$git: #e44c30;
+$reactjs: #5ccfee;
+$jest: #7e3653;
+$api: #f03e26;
+
+// Color filters for the SVGs
+$filter-white: invert(96%) sepia(7%) saturate(450%) hue-rotate(211deg) brightness(126%) contrast(100%);
+
+@mixin hover-lighter-color ($background-color, $font-color) {
+    $lighter-background-color: color.scale($background-color, $lightness: 30%);
+    $saturated-background-color: color.scale($lighter-background-color, $saturation: 5%);
+    background-color: $saturated-background-color;
+    $lighter-font-color: color.scale($font-color, $lightness: 20%);
+    color: $lighter-font-color;
+}
