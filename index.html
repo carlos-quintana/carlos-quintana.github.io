@@ -170,6 +170,24 @@
     <section class="section" id="contact">
         <h2>Let's get in contact!</h2>
 
+        <form id="contact-form"
+            action="https://formspree.io/f/mzbojjlq"
+            method="POST">
+            <label for="contact-email">
+                Your email:
+                <input id="contact-email" type="email" name="email" placeholder="Your email">
+            </label>
+            <label for="contact-message">
+                Your message:
+                <textarea id="contact-message" name="message" placeholder="Send me a message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button id="contact-submit" type="submit">
+                <i class="icon-envelope"></i>
+                Send
+            </button>
+        </form>
+
         <div class="row-contact">
             <a href="https://github.com/carlos-quintana" target="_blank">
                 <i class="icon-social-github"></i>
@@ -184,7 +202,7 @@
 
     <!-- Footer-->
     <footer>
-
+        Carlos Quintana - Software Developer (2022)
     </footer>
 
     <script>

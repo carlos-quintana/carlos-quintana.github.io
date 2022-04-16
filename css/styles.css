@@ -457,8 +457,123 @@ footer {
 /*
  *  CONTACT
  */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  width: min(650px, 95%);
+}
+#contact-form * {
+  width: 100%;
+}
+#contact-form label {
+  font-size: 1.25rem;
+  padding-left: 5px;
+}
+
+#contact-email {
+  display: inline-block;
+  min-width: 100px;
+  height: 2.5rem;
+  padding: 0.375rem 1rem;
+  margin: 0.5rem 0;
+  color: #78828d;
+  background-color: white;
+  background-clip: padding-box;
+  box-shadow: 0px 2px 3px #7e3d40;
+  font-size: 1.25rem;
+  font-family: inherit;
+  border: 1px solid #ced4da;
+  border-radius: 1rem;
+  flex-grow: 1;
+  transition: 0.3s;
+}
+#contact-email:focus {
+  color: #444;
+  border-color: #9ac9fc;
+  outline: 0;
+  box-shadow: 0 1px 5px 5px #ec577c;
+}
+
+#contact-message {
+  resize: none;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+  min-height: 10rem;
+  color: #78828d;
+  background-color: white;
+  background-clip: padding-box;
+  box-shadow: 0px 2px 3px #7e3d40;
+  font-size: 1.25rem;
+  font-family: inherit;
+  border: 1px solid #ced4da;
+  border-radius: 1rem;
+  flex-grow: 1;
+  transition: 0.3s;
+}
+#contact-message:focus {
+  color: #444;
+  border-color: #9ac9fc;
+  outline: 0;
+  box-shadow: 0 1px 5px 5px #ec577c;
+}
+
+#contact-submit {
+  background-color: white;
+  color: #222;
+  text-decoration: none;
+  padding: 1.5rem 2.5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(34, 34, 34, 0.6666666667) 0px 2px 5px;
+  padding: 0.75rem 1rem;
+  line-height: 2rem;
+  margin: 5px;
+  margin-top: 1rem;
+  max-width: 180px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.25s ease 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact-submit:hover {
+  background-color: white;
+  color: #4e4e4e;
+}
+#contact-submit:hover {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+#contact-submit i {
+  font-size: 1.75rem;
+  margin-right: 10px;
+  pointer-events: none;
+  width: auto !important;
+}
+
+@media screen and (max-width: 500px) {
+  #contact h2 {
+    font-size: 2.75rem;
+  }
+
+  #contact-form label {
+    font-size: 1.5rem;
+  }
+
+  #contact-email {
+    height: 3.5rem;
+  }
+
+  #contact-submit {
+    padding: 1rem 1rem;
+  }
+}
 .row-contact {
-  width: min(100%, 600px);
+  width: min(100%, 500px);
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -470,6 +585,7 @@ footer {
   color: #222;
   text-decoration: none;
   padding: 1.5rem 2.5rem;
+  border: none;
   border-radius: 10px;
   box-shadow: rgba(34, 34, 34, 0.6666666667) 0px 2px 5px;
   padding: 1rem;
@@ -498,6 +614,7 @@ footer {
 
 footer {
   padding: 3rem 0;
+  color: #666;
 }
 
 /*# sourceMappingURL=styles.css.map */
