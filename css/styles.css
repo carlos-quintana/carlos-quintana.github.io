@@ -432,6 +432,15 @@ footer {
   color: white;
 }
 
+.pill-jest {
+  background-color: #7e3653;
+  color: white;
+}
+.pill-jest:hover {
+  background-color: #bd5a82;
+  color: white;
+}
+
 @media (max-width: 888px) {
   .card {
     margin-bottom: 5rem;
