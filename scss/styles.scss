@@ -332,54 +332,34 @@ footer {
     @extend .technology-pill;
     background-color: $background-color;
     color: $color;
+    &:hover {
+        @include color.hover-lighter-color($background-color, $color);
+    }
 }
 
 .pill-html5 {
     @include technology-pill(color.$html5, white);
-
-    &:hover {
-        @include color.hover-lighter-color(color.$html5, white);
-    }
 }
 
 .pill-css3 {
     @include technology-pill(color.$css3, white);
-
-    &:hover {
-        @include color.hover-lighter-color(color.$css3, white);
-    }
 }
 
 .pill-sass {
     @include technology-pill(color.$sass, white);
-
-    &:hover {
-        @include color.hover-lighter-color(color.$sass, white);
-    }
 }
 
 .pill-js {
     @include technology-pill(color.$javascript, color.$dark);
-
-    &:hover {
-        @include color.hover-lighter-color(color.$javascript, color.$dark);
-    }
 }
 
 .pill-ts {
     @include technology-pill(color.$typescript, white);
-
-    &:hover {
-        @include color.hover-lighter-color(color.$typescript, white);
-    }
 }
 
 .pill-api {
     @include technology-pill(color.$api, white);
-
-    &:hover {
-        @include color.hover-lighter-color(color.$api, white);
-    }
+}
 
 .pill-jest {
     @include technology-pill(color.$jest, white);

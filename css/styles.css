@@ -366,7 +366,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.technology-pill, .pill-api, .pill-ts, .pill-js, .pill-sass, .pill-css3, .pill-html5 {
+.technology-pill, .pill-jest, .pill-api, .pill-ts, .pill-js, .pill-sass, .pill-css3, .pill-html5 {
   font-size: 1rem;
   font-weight: 600;
   padding: 0.25rem 0.75rem;
