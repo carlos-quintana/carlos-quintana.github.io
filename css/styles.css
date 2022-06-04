@@ -323,6 +323,10 @@ footer {
   flex-grow: 3;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .card-content p {
   line-height: 1.5rem;
 }
@@ -366,7 +370,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.technology-pill, .pill-jest, .pill-api, .pill-ts, .pill-js, .pill-sass, .pill-css3, .pill-html5 {
+.technology-pill, .pill-jest, .pill-api, .pill-react, .pill-ts, .pill-js, .pill-sass, .pill-css3, .pill-html5 {
   font-size: 1rem;
   font-weight: 600;
   padding: 0.25rem 0.75rem;
@@ -421,6 +425,15 @@ footer {
 .pill-ts:hover {
   background-color: #659ddc;
   color: white;
+}
+
+.pill-react {
+  background-color: #5ccfee;
+  color: #282828;
+}
+.pill-react:hover {
+  background-color: #8cdef4;
+  color: #535353;
 }
 
 .pill-api {
