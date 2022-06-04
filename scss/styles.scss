@@ -275,6 +275,10 @@ footer {
     flex-grow: 3;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .card-content p {
     line-height: 1.5rem;
 }
@@ -355,6 +359,10 @@ footer {
 
 .pill-ts {
     @include technology-pill(color.$typescript, white);
+}
+
+.pill-react {
+    @include technology-pill(color.$reactjs, color.$dark);
 }
 
 .pill-api {
