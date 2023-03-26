@@ -370,7 +370,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.technology-pill, .pill-jest, .pill-api, .pill-react, .pill-ts, .pill-js, .pill-sass, .pill-css3, .pill-html5 {
+.technology-pill, .pill-jest, .pill-sql, .pill-thymeleaf, .pill-spring, .pill-api, .pill-react, .pill-ts, .pill-js, .pill-bootstrap, .pill-sass, .pill-css3, .pill-html5 {
   font-size: 1rem;
   font-weight: 600;
   padding: 0.25rem 0.75rem;
@@ -409,6 +409,15 @@ footer {
   color: white;
 }
 
+.pill-bootstrap {
+  background-color: #7f10ee;
+  color: white;
+}
+.pill-bootstrap:hover {
+  background-color: #a557f4;
+  color: white;
+}
+
 .pill-js {
   background-color: #ebd300;
   color: #282828;
@@ -442,6 +451,33 @@ footer {
 }
 .pill-api:hover {
   background-color: #f57767;
+  color: white;
+}
+
+.pill-spring {
+  background-color: #A3C566;
+  color: white;
+}
+.pill-spring:hover {
+  background-color: #bfd892;
+  color: white;
+}
+
+.pill-thymeleaf {
+  background-color: #005b0f;
+  color: white;
+}
+.pill-thymeleaf:hover {
+  background-color: #00d924;
+  color: white;
+}
+
+.pill-sql {
+  background-color: #0073cb;
+  color: white;
+}
+.pill-sql:hover {
+  background-color: #28a2ff;
   color: white;
 }
 

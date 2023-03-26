@@ -353,6 +353,10 @@ footer {
     @include technology-pill(color.$sass, white);
 }
 
+.pill-bootstrap {
+    @include technology-pill(color.$bootstrap, white);
+}
+
 .pill-js {
     @include technology-pill(color.$javascript, color.$dark);
 }
@@ -367,6 +371,18 @@ footer {
 
 .pill-api {
     @include technology-pill(color.$api, white);
+}
+
+.pill-spring {
+    @include technology-pill(color.$spring, white);
+}
+
+.pill-thymeleaf {
+    @include technology-pill(color.$thymeleaf, white);
+}
+
+.pill-sql {
+    @include technology-pill(color.$sql, white);
 }
 
 .pill-jest {
