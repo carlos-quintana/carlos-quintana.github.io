@@ -207,7 +207,7 @@ footer {
  */
 #skills h3 {
   font-size: 2rem;
-  margin: 0 0 2rem 0;
+  margin: 1rem 0 1rem 0;
 }
 
 .row-skills,
@@ -220,8 +220,8 @@ footer {
 .skill {
   width: 100%;
   max-width: 100%;
-  padding: 0 20px;
-  margin-bottom: 1.5rem;
+  padding: 0 10px;
+  margin-bottom: 1rem;
   flex-basis: 0;
   flex-grow: 1;
   display: flex;
@@ -231,16 +231,20 @@ footer {
 }
 
 .skill-icon {
-  width: 6rem;
-  margin-bottom: 0.5rem;
+  width: 5rem;
+  margin-bottom: 0.25rem;
   user-select: none;
   filter: invert(96%) sepia(7%) saturate(450%) hue-rotate(211deg) brightness(126%) contrast(100%);
+  transition: width 0.2s, filter 0.1s;
+}
+.skill-icon:hover {
+  width: 5.2rem;
 }
 
 .skill span {
   font-weight: bold;
-  font-size: 1.5rem;
-  width: 8rem;
+  font-size: 1.25rem;
+  width: 7rem;
   cursor: default;
 }
 
@@ -251,12 +255,14 @@ footer {
   }
 
   .skill {
-    margin-bottom: 2rem;
     padding: 0 5px;
   }
 
   .skill-icon {
-    width: 4.5rem;
+    width: 3rem;
+  }
+  .skill-icon:hover {
+    width: 3.2rem;
   }
 
   .skill span {

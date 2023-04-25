@@ -1,5 +1,5 @@
-@use "colors"as color;
-@use "nav"as *; // Nav bar and hamburger button
+@use "colors" as color;
+@use "nav" as *; // Nav bar and hamburger button
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -145,7 +145,7 @@ footer {
 
 #skills h3 {
     font-size: 2rem;
-    margin: 0 0 2rem 0;
+    margin: 1rem 0 1rem 0;
 }
 
 .row-skills,
@@ -160,8 +160,8 @@ footer {
     width: 100%;
     max-width: 100%;
 
-    padding: 0 20px;
-    margin-bottom: 1.5rem;
+    padding: 0 10px;
+    margin-bottom: 1rem;
 
     flex-basis: 0;
     flex-grow: 1;
@@ -172,16 +172,21 @@ footer {
 }
 
 .skill-icon {
-    width: 6rem;
-    margin-bottom: 0.5rem;
+    width: 5rem;
+    margin-bottom: 0.25rem;
     user-select: none;
     filter: color.$filter-white; // Override the color of the SVG
+    transition: width 0.2s, filter 0.1s;
+
+    &:hover {
+        width: 5.2rem;
+    }
 }
 
 .skill span {
     font-weight: bold;
-    font-size: 1.5rem;
-    width: 8rem;
+    font-size: 1.25rem;
+    width: 7rem;
     cursor: default;
 }
 
@@ -195,12 +200,16 @@ footer {
     }
 
     .skill {
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
         padding: 0 5px;
     }
 
     .skill-icon {
-        width: 4.5rem;
+        width: 3rem;
+
+        &:hover {
+            width: 3.2rem;
+        }
     }
 
     .skill span {
@@ -214,6 +223,8 @@ footer {
 #typescript-icon {
     border-radius: 15%;
 }
+
+
 
 /*
  *  PROJECTS
@@ -336,6 +347,7 @@ footer {
     @extend .technology-pill;
     background-color: $background-color;
     color: $color;
+
     &:hover {
         @include color.hover-lighter-color($background-color, $color);
     }
